@@ -1,6 +1,4 @@
-import 'package:contact_us/campaign_details.dart';
-import 'package:contact_us/contact_us.dart';
-import 'package:contact_us/reg_screen_validation_task.dart';
+import 'package:contact_us/faqs_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,12 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const RegScreenValidationTask(),
+      home: FAQsScreen(),
     );
   }
 }
