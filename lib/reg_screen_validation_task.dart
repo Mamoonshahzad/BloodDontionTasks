@@ -148,7 +148,7 @@ class _RegScreenValidationTaskState extends State<RegScreenValidationTask> {
                     reUsableWidgetRegScreen(
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return 'Enter the value';
+                            return 'Enter the location';
                           }
                           return null;
                         },
