@@ -41,7 +41,7 @@ class CampaignDetailsState extends State<CampaignDetails> {
                       color: Colors.white),
                   child: Row(
                     children: [
-                      Container(
+                      SizedBox(
                         height: Get.height * .07,
                         width: Get.width * .22,
                         child: const Center(
@@ -49,7 +49,7 @@ class CampaignDetailsState extends State<CampaignDetails> {
                                 Text('Date', style: TextStyle(fontSize: 15))),
                       ),
                       const VerticalDivider(color: Colors.grey, thickness: 1),
-                      Container(
+                      SizedBox(
                         height: Get.height * .07,
                         width: Get.width * .6,
                         child: Center(

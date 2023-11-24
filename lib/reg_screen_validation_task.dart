@@ -58,7 +58,7 @@ class _RegScreenValidationTaskState extends State<RegScreenValidationTask> {
                     SizedBox(height: Get.height * .02),
                     reUsableWidgetRegScreen(
                         validator: (value) {
-                          if (value! == null || value.isEmpty) {
+                          if (value!.isEmpty) {
                             return 'Enter the mail';
                           }
                           RegExp emailRegExp = RegExp(
@@ -111,12 +111,12 @@ class _RegScreenValidationTaskState extends State<RegScreenValidationTask> {
                     SizedBox(height: Get.height * .02),
                     reUsableWidgetRegScreen(
                         validator: (value) {
-                          if (value! == null || value.isEmpty) {
+                          if (value!.isEmpty) {
                             return 'Enter the phone No';
                           }
                           RegExp emailRegExp =
                               RegExp(r"^(\+92|0)(3[0-9]{9}|3[0-9]{9})$");
-                          if (!emailRegExp.hasMatch(value)) {
+                          if (!emailRegExp.hasMatch(value!)) {
                             return 'Please enter a valid phone No';
                           }
                           return null;
@@ -129,7 +129,7 @@ class _RegScreenValidationTaskState extends State<RegScreenValidationTask> {
                     SizedBox(height: Get.height * .02),
                     reUsableWidgetRegScreen(
                         validator: (value) {
-                          if (value! == null || value.isEmpty) {
+                          if (value!.isEmpty) {
                             return 'Enter the blood group';
                           }
                           RegExp emailRegExp = RegExp(
@@ -158,7 +158,7 @@ class _RegScreenValidationTaskState extends State<RegScreenValidationTask> {
                         fieldController: locationController,
                         inputType: TextInputType.text),
                     SizedBox(height: Get.height * .02),
-                    Container(
+                    SizedBox(
                         width: Get.width,
                         height: Get.height * .08,
                         child: ElevatedButton(

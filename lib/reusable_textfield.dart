@@ -13,14 +13,14 @@ Widget campaignDetailsWidget(
     height: Get.height * .07,
     child: Row(
       children: [
-        Container(
+        SizedBox(
           height: Get.height * .08,
           width: Get.width * .22,
           child: Center(
               child: Text(fieldName, style: const TextStyle(fontSize: 15))),
         ),
         const VerticalDivider(color: Colors.grey, thickness: 1),
-        Container(
+        SizedBox(
           height: Get.height * .08,
           width: Get.width * .6,
           child: Center(

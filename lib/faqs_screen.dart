@@ -56,7 +56,8 @@ class FAQsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('FAQs Screen'),
+        title: const Text('FAQs',
+            style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold)),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -68,7 +69,7 @@ class FAQsScreen extends StatelessWidget {
             return Column(
               children: [
                 ExpansionTile(
-                  collapsedBackgroundColor: Colors.grey,
+                  collapsedBackgroundColor: Colors.white,
                   title: Text(
                     question!,
                     style: const TextStyle(

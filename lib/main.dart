@@ -1,6 +1,8 @@
-import 'package:contact_us/faqs_screen.dart';
+import 'package:contact_us/about_us_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'DonationHistory.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: FAQsScreen(),
+      home: const AboutUsScreen(),
     );
   }
 }
